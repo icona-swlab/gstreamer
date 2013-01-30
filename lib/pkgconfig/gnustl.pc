@@ -1,0 +1,15 @@
+prefix=/home/silvio/cerbero/dist/android_arm
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+Name: gnustl
+Description: gnustl
+Version: 1.0
+Requires: 
+Requires.private: 
+Libs: -L${libdir} -lgnustl -lsupc++ -lstdc++ 
+Libs.private: ${libdir}/libgnustl.a ${libdir}/libsupc++.a
+Cflags: -I/home/silvio/cerbero/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.6/include -I/home/silvio/cerbero/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi/include

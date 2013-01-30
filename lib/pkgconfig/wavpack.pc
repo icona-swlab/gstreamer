@@ -1,0 +1,11 @@
+prefix=/home/silvio/cerbero/dist/android_arm
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: wavpack
+Description: wavpack library
+Version: 4.60.1
+Requires:
+Conflicts:
+Libs: -L${libdir} -lwavpack -lm -liconv
+Cflags: -I${includedir}

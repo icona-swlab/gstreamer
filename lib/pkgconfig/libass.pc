@@ -1,0 +1,13 @@
+prefix=/home/silvio/cerbero/dist/android_arm
+exec_prefix=${prefix}
+libdir=/home/silvio/cerbero/dist/android_arm/lib
+includedir=${prefix}/include
+
+Name: libass
+Description: LibASS is an SSA/ASS subtitles rendering library
+Version: 0.10.0
+Requires: 
+Requires.private: fontconfig >= 2.2.0, fribidi >= 0.19.0, freetype2 >= 9.6.3
+Libs: -L${libdir} -lass 
+Libs.private: -lm
+Cflags: -I${includedir}

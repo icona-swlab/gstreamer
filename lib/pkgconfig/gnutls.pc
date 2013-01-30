@@ -1,0 +1,24 @@
+# Process this file with autoconf to produce a pkg-config metadata file.
+
+# Copyright (C) 2004-2012 Free Software Foundation, Inc.
+
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+# Author: Simon Josefsson
+
+prefix=/home/silvio/cerbero/dist/android_arm
+exec_prefix=${prefix}
+libdir=/home/silvio/cerbero/dist/android_arm/lib
+includedir=${prefix}/include
+
+Name: GnuTLS
+Description: Transport Security Layer implementation for the GNU system
+URL: http://www.gnu.org/software/gnutls/
+Version: 3.0.22
+Libs: -L${libdir} -lgnutls
+Libs.private: -L/home/silvio/cerbero/dist/android_arm/lib -lnettle -L/home/silvio/cerbero/dist/android_arm/lib -lhogweed -L/home/silvio/cerbero/dist/android_arm/lib -lgmp -L/home/silvio/cerbero/dist/android_arm/lib -liconv -L/home/silvio/cerbero/dist/android_arm/lib -lintl -L/home/silvio/cerbero/android-ndk-r8b/platforms/android-9/arch-arm/usr/lib -lc -R/home/silvio/cerbero/dist/android_arm/lib -R/home/silvio/cerbero/android-ndk-r8b/platforms/android-9/arch-arm/usr/lib
+Requires.private: libtasn1, zlib
+Cflags: -I${includedir}

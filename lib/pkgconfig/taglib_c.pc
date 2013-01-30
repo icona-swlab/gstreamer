@@ -1,0 +1,12 @@
+prefix=/home/silvio/cerbero/dist/android_arm
+exec_prefix=/home/silvio/cerbero/dist/android_arm
+libdir=/home/silvio/cerbero/dist/android_arm/lib
+includedir=/home/silvio/cerbero/dist/android_arm/include
+
+
+Name: TagLib C Bindings
+Description: Audio meta-data library (C bindings)
+Requires: taglib
+Version: 1.7.2
+Libs: -L/home/silvio/cerbero/dist/android_arm/lib -ltag_c
+Cflags: -I/home/silvio/cerbero/dist/android_arm/include/taglib 
